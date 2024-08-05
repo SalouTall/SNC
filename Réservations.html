@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réservation SNC</title>
+    <link rel="stylesheet" href="Réservations.css">
+</head>
+<body>
+    <header>
+        <h1>Réservations</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="Historique.html">À Propos</a></li>
+                <li><a href="Programme.html">Programme</a></li>
+                <li><a href="Galerie.html">Galerie</a></li>
+                <li><a href="Réservations.html">Réservations</a></li>
+                <li><a href="Parténaires.html">Nos parténaires</a></li>
+                <li><a href="News.html">Actualités</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="reservation-form">
+            <h2>Réservez votre Hôtel ou Stand</h2>
+            <form id="reservation-form">
+                <label for="type">Type de Réservation : Hôtel ou stand</label>
+                <select id="type" name="type" onchange="toggleReservationDetails()">
+                    <option value="hotel">Hôtel</option>
+                    <option value="stand">Stand</option>
+                </select>
+
+                <div id="hotel-details" class="hidden">
+                    <label for="hotel">Choisissez un Hôtel :</label>
+                    <select id="hotel" name="hotel" onchange="updateHotelImage()">
+                        <option value="HOTEL_WIFAMA">Hôtel_Wifama</option>
+                        <option value="MERMOZ_HOTEL">Mermoz_Hôtel</option>
+                        <option value="IBA_HOTEL">Iba_Hôtel</option>
+                        <option value="AUBERGE_HOTEL">Auberge_Hôtel</option>
+                        <option value="PACIFIQUE_HOTEL">Pacifique_Hôtel</option>
+                        <option value="DIOULASSOBA_HOTEL">Dioulassoba_Hôtel</option>
+                    </select> 
+
+                    <label for="room-type">Choisissez le type de chambre :</label>
+                    <select id="room-type" name="room-type">
+                        <option value="simple">Simple</option>
+                        <option value="double">Double</option>
+                        <option value="suite">Suite</option>
+                    </select>
+
+                    <div id="hotel-image">
+                        <img id="hotel-img" src="" alt="Image de l'hôtel" style="width: 100%; display: none;">
+                    </div>
+                    
+                    <label for="date">Date de Réservation :</label>
+                    <input type="date" id="date" name="date" required>
+                    
+                    Nom: <input id="username" name="nom" type="text" placeholder="Entrez votre nom">
+                    Prénom: <input id="prenom" name="prenom" type="text" placeholder="Entrez votre prénom">
+                    Gmail: <input id="mail" name="mail" type="email" placeholder="Entrez votre gmail">
+                    Téléphone: <input id="phone" name="phone" type="tel" placeholder="Numéro portable">
+                    Arrivée prévue: <input id="came" name="came" type="date" placeholder="Arrivage">
+                    Nombre d'adultes: <input id="Tall" name="Tall" type="number" placeholder="Exemple 4">
+                    Nombre d'enfants: <input id="Small" name="Small" type="number" placeholder="Exemple 10">
+                    
+                    <button type="submit">Réserver</button>
+                </div>
+
+                <div id="stand-details" class="hidden">
+                    <label for="stand">Choisissez un Stand :</label>
+                    <select id="stand" name="stand">
+                        <option value="stand1">Stand Grand</option>
+                        <option value="stand2">Stand Moyen</option>
+                        <option value="stand3">Stand Petit</option>
+                    </select>
+
+                    <label for="date">Date de Réservation :</label>
+                    <input type="date" id="date" name="date" required>
+
+                    Nom: <input id="username" name="nom" type="text" placeholder="Entrez votre nom">
+                    Prénom: <input id="prenom" name="prenom" type="text" placeholder="Entrez votre prénom">
+                    Gmail: <input id="mail" name="mail" type="email" placeholder="Entrez votre gmail">
+                    Téléphone: <input id="phone" name="phone" type="tel" placeholder="Numéro portable">
+                    Arrivée prévue: <input id="came" name="came" type="date" placeholder="Arrivage">
+                    <input type="text" placeholder="Tapez *144*2*4#, suivez les instructions et entrez ici le code OTP généré">
+                    
+                    <button type="submit">Réserver</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <script src="Réservations.js"></script>
+    <footer>
+        <p>&copy; 2024 Semaine Nationale de la Culture</p>
+    </footer>
+</body>
+</html>

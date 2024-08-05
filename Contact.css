@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    background-color: #333;
+    color: yellow;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.contact-container {
+    padding: 2rem;
+    text-align: center;
+}
+
+.contact-details {
+    margin-bottom: 2rem;
+}
+
+.contact-info {
+    margin: 1rem 0;
+}
+
+.contact-info img {
+    vertical-align: middle;
+    width: 24px; /* Ajustez la taille selon vos besoins */
+    height: auto;
+    margin-right: 0.5rem;
+}
+
+.social-media {
+    margin: 2rem 0;
+}
+
+.social-media a {
+    margin: 0 0.5rem;
+    display: inline-block;
+}
+
+.social-media img {
+    width: 40px; /* Ajustez la taille selon vos besoins */
+    height: auto;
+}
+
+footer.event-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 2rem;
+}

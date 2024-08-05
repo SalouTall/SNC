@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+
+    
+header {
+    background-color: #333;
+    color: yellow;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+}
+
+.Groupe {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.Groupe h1 {
+    color: #1357e1;
+    margin-bottom: 20px;
+}
+
+.Groupe h2 {
+    color: #000;
+    margin-top: 30px;
+}
+
+.Groupe p {
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+.Groupe ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.Groupe ul li {
+    margin: 10px 0;
+}
+
+.Groupe ul li strong {
+    color: #ffd700;
+}
+
+.Sous-groupe {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+body {
+    height: 200vh; 
+}
+
+.Sous-groupe {
+    animation-delay: 0.5s; 
+}
+
+@media (min-width: 768px) {
+    .Sous-groupe:nth-child(1) {
+        animation-delay: 0.5s;
+    }
+    .Sous-groupe:nth-child(2) {
+        animation-delay: 1s;
+    }
+    .Sous-groupe:nth-child(3) {
+        animation-delay: 1.5s;
+    }
+}
